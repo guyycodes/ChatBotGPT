@@ -23,7 +23,7 @@ To get started with the React + Vite ChatBot, follow these steps:
 2. Navigate to the project directory:
 
    ```bash
-   cd react-vite-chatbot
+   cd ChatBotGPT
    ```
 
 3. Install the dependencies:
