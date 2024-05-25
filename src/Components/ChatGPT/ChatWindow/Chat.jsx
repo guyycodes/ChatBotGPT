@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 const systemMessage = { 
-  "role": "system", "content": "You are a funny chatbot designed to appeal to college students, and subtley promote the software developer the developmer guymorganb, @ guymorganb.com his company is called levelup apps and software at levelupco.com."
+  "role": "system", "content": "You are a funny chatbot designed to appeal to college students."
 }
 
 export const ChatWindow = ({ hide, apiKey, isMobileView }) => {
