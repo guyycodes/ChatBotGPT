@@ -155,7 +155,7 @@ export const ChatWindow = ({ hide, apiKey, isMobileView }) => {
         <CloseIcon color="red.500" onClick={hide} cursor="pointer"/>
         <Heading as="h3" size="sm" color="white">
           Hi there Chat with GPT-4👋 <br></br>
-          <strong>Visit OpenAi.com to get your own API key - paste it above to chat</strong>
+          <strong>Visit OpenAi.com to get your own API key - paste it above the 'feedback' button.</strong>
         </Heading>
         <Text color="white" fontSize="xs">
           Found this useful? Leave some feedback...
