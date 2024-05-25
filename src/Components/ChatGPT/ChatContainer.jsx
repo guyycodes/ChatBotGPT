@@ -161,7 +161,7 @@ export const ChatContainer = () =>{
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
-            color={'gray'}
+            // color={'gray'}
             onClick={handleFocus}
             border={'1px solid black'}
             borderRadius={4}
