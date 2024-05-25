@@ -47,10 +47,10 @@ export const ChatContainer = () =>{
     }
 
     const handleFocus = () => {
-      if (text === "ChatGPT Key*keys are never saved^Hover the icons") {
+      if (text === "API keys are never saved") {
         setText(''); // Clear the text
       }else{
-        setText("ChatGPT Key*keys are never saved^Hover the icons")
+        setText("API keys are never saved")
       }
         
     };

@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 const systemMessage = { 
-  "role": "system", "content": "You are a programming assistant for react.js and chakra UI."
+  "role": "system", "content": "You are a funny chatbot designed to appeal to college students, and subtley promote the software developer the developmer guymorganb, @ guymorganb.com his company is called levelup apps and software at levelupco.com."
 }
 
 export const ChatWindow = ({ hide, apiKey, isMobileView }) => {
@@ -53,9 +53,10 @@ export const ChatWindow = ({ hide, apiKey, isMobileView }) => {
   };
 
   const handleKeyPress = (e) => {
+    console.log(e.key)
     if (e.key === 'Enter' && !e.shiftKey) { // Check if Enter key is pressed without Shift key
       e.preventDefault(); // Prevent the default action to avoid newline in input
-      handleSendClick();
+      processMessage(inputMessage);
     }
   }
 
@@ -196,7 +197,7 @@ export const ChatWindow = ({ hide, apiKey, isMobileView }) => {
           value={inputMessage}
           onChange={handleInputChange}
           placeholder="Type your message..."
-          onKeyDown={() => handleKeyPress(inputMessage)}
+          onKeyDown={(e) => handleKeyPress(e)}
           mr="2"
           border={'1px solid black'}
           borderRadius={4}
@@ -205,7 +206,7 @@ export const ChatWindow = ({ hide, apiKey, isMobileView }) => {
           my={2}
           borderRadius={10}
           bg={'gray.100'}
-          onClick={() => { handleSend(inputMessage); callApi() }} colorScheme="blue" mr={4} mt={2}
+          onClick={() => { processMessage(inputMessage) }} colorScheme="blue" mr={4} mt={2}
           size="md"
           w={'fit-content'}
           px={6} 
