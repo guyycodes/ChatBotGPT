@@ -11,8 +11,8 @@ const Theme = extendTheme({
   styles: {
     global: (props) => ({
       body: {
-        bg: props.colorMode === 'dark' ? 'gray.800' : 'white',
-        color: props.colorMode === 'dark' ? 'white' : 'black',
+        // bg: props.colorMode === 'dark' ? 'gray.800' : 'white',
+        // color: props.colorMode === 'dark' ? 'white' : 'black',
       },
       'html, body, #root, div': {
         boxSizing: 'border-box',
