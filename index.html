@@ -98,5 +98,17 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <div class="bmc-widget">
+      <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/ChatBotGPT/sw.js', { scope: '/ChatBotGPT/' })
+              .then(function(registration) {
+                console.log('PWA service worker ready');
+              }, function(err) {
+                console.log('PWA service worker registration failed: ', err);
+              });
+          });
+        }
+      </script>
   </body>
 </html>

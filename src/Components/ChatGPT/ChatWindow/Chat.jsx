@@ -202,6 +202,7 @@ export const ChatWindow = ({ hide, apiKey, isMobileView }) => {
           mr="2"
           border={'1px solid black'}
           borderRadius={4}
+          bg={'white'}
         />
         <Button           
           my={2}

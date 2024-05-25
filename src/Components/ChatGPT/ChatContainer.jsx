@@ -154,17 +154,18 @@ export const ChatContainer = () =>{
         </Slide>
       </Box>
       <Flex direction="column" alignItems="center" justifyContent="center" width="100%" mt={4}>
-      <FormControl>
+      <FormControl >
           <FormLabel htmlFor="OpenAi" className="input-label"></FormLabel>
           <Input
             className="input-field"
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
-            // color={'gray'}
+            color={'black'}
             onClick={handleFocus}
             border={'1px solid black'}
             borderRadius={4}
+            bg={'white'}
           />
         </FormControl>
         <Button
