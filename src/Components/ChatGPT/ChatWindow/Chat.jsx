@@ -152,13 +152,14 @@ export const ChatWindow = ({ hide, apiKey, isMobileView }) => {
         alignItems="flex-start"
         spacing={1}
       >
+        <CloseIcon color="red.500" onClick={hide} cursor="pointer"/>
         <Heading as="h3" size="sm" color="white">
-          Hi there Chat with GPT-4👋
+          Hi there Chat with GPT-4👋 <br></br>
+          <strong>Visit OpenAi.com to get your own API key - paste it above to chat</strong>
         </Heading>
         <Text color="white" fontSize="xs">
           Found this useful? Leave some feedback...
         </Text>
-        <CloseIcon color="red.500" onClick={hide} cursor="pointer"/>
       </VStack>
         {/* Messages Section */}
     <Box flex="1" overflowY="auto" p="4" display="flex" flexDirection="column" ref={chatWindowRef2}>
