@@ -1,6 +1,6 @@
 # React + Vite ChatBot (Progressive Web App)
 
-This project is a chatbot application built with React and Vite that allows users to interact with the OpenAI API. It is designed as a Progressive Web App (PWA), which means it can be installed on devices and used offline. Users can paste their OpenAI API key into the application and start conversing with the chatbot powered by OpenAI's language model.
+This project is a chatbot application built with React and Vite that allows users to interact with the OpenAI API. It is designed as a Progressive Web App (PWA), which means it can be installed on devices and used offline. Users can paste their OpenAI API key into the application and start conversing with the chatbot powered by OpenAI's language model. find the site live here: https://gptchatapp.com/
 
 ## Features
 
